@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TaskMaster</title>
+  <link rel="stylesheet" href="Taskmaster.css">
+</head>
+<body>
+
+
+
+  <!-- NAVBAR ITEMS !! -->
+  <ul>
+    <li><a href="#About"><strong> ABOUT </strong></a></li>
+    <li><a href="#Portfolio"><strong> PORTFOLIO </strong></a></li>
+    <li><a href="#Try"><strong> TRY THE BETA NOW  </strong></a></li>
+    <li><a href="#Legacy"><strong> LEGACY </strong></a></li>
+    <li><a href="#Team"><strong> TEAM </strong></a></li>
+  </ul>
+
+
+
+  <!-- Big Welcome Sign -->
+  <div id="topper">
+    <h1> <center> Welcome to TaskMaster ! </center> </h1>
+  </div>
+
+
+  <br><br><br><br><br>
+  <br><br><br><br><br>
+
+
+
+   <!-- App Intro  Sentences-->
+   <table id="tab1" style="width:37%" align=center>
+     <tr>
+       <th>At TaskMaster, we believe ones maximum potential can never be <center> attained if there are too many things
+         on their mind</center>
+         <br>
+         <center> Your calls answered, your mails sorted </center>
+         <center><h3> But that's not it, we plan to do way more than that </h3></center>
+         <br>
+         Every upcoming task you have, simply key it into our beta tester availabe below and it will automatically
+         push it onto your phone <center> to remind you </center>
+         <br><br>
+         <center> <i> Stay tuned for more updates folks! <i> </center>
+         </th>
+       </tr>
+     </table>
+
+
+    <br><br>
+
+    <!--MOVE FUNCTIONALITY HERE -->
+    <!--BETA TESTER SECTION-->
+    <div id="Try">
+    <h1> <center><u> BEHOLD, THE BETA IS FINALLY HERE </u> </center> <h1>
+    </div>
+
+
+
+    <!-- The ANGULAR FUNCTIONALITIES -->
+    <script src="angular.min.js"></script>
+    <body ng-app="myApp" ng-controller="todoCtrl">
+
+
+      <form ng-submit="todoAdd()">
+        <div id="hbox">
+      <div id="ebox">  <center> <input type="text" ng-model="todoInput" size="45" placeholder="Add any Pending Task Buddy"></center> </div> <!-- This is the small box where users will enter tasks --> </center>
+      &nbsp &nbsp <div id="bbox">  <center> <input type="submit" value="Add New"> </center> </div>
+    </div>
+      </form>
+
+      <br>
+
+      <div ng-repeat="x in todoList">
+        <center> <input type="checkbox" ng-model="x.done"> <span ng-bind="x.todoText"></span> </center>
+      </div>
+
+      <center> <p><button ng-click="remove()">Remove marked</button></p> </center>
+      <script src="Taskmaster.js"></script>
+
+
+      <br><br>  <hr size="2" align="center" NOSHADE >  <br><br>
+
+
+    <!-- ABOUT SECTION -->
+    <div id="About">
+      <center><bold><h1> ABOUT </h1></bold></center>
+    </div>
+    <table id="tab3" style="width:37%" align=center>
+      <tr>
+        <th> <h3> With a plethora of tasks to manage everyday, you're bound to forget a couple of them.Why don't
+           <center> you let us take over ? </center></h3>
+          <center> <h3> Trust us when we say you won't be disappointed </h3> <center>
+            <h1><center> ~  ~  ~ </center></h1>
+            <center> <h3> All your tasks linked across all your devices. Our distributed file system synchronizes
+              across all your devices to access tasks from anywhere </h3> </center>
+              <h1><center> ~  ~  ~ </center></h1>
+            </th>
+          </tr>
+        </table>
+
+
+
+        <!-- Top 2 Spinning Boxes -->
+        <div id="topbox">
+          <div class="box rotate">
+            <center> <h2> {SIMPLISTIC} </h2> </center> </br></br>
+            <center> Add.Push.Upload </br> You're good to go </center>
+          </div>
+          <div class="box rotate">
+            <center> <h2> {ELEGANT} </h2> </center> </br></br>
+            <center> Lucid & Alluring Interface  </center>
+          </div>
+        </div>
+
+
+        <!-- Bottom 2 Spinning Boxes -->
+        <div id="bottombox">
+          <div class="box rotate">
+            <center> <h2> {DEPENDABLE} </h2> </center> </br></br>
+            <center> We make sure you get the task done, inexorably </center>
+          </div>
+          <div class="box rotate">
+            <center> <h2> {FRIENDLY} <h2> </center> </br></br>
+              <center> Non Convoluted Interface you've always wanted </center>
+            </div>
+          </div>
+
+
+          <br><br>
+
+
+
+          <!--  WHOLE PORTFOLIOO SECTION INCLUDING FEATURED INVESTMENTS AND OTHER COMPANIES -->
+          <div id="Portfolio">
+            <h1> <center> PORTFOLIO <center> </h1>
+          </div>
+
+
+            <br>
+
+            <center> <h4> TaskMaster isn't just for individuals. We work with a number of industries
+              across a diverse range of sectors. </center> </h4>
+              <br><br>
+
+              <h2> <center> TOP INVESTMENT SECTORS </center> </h2>
+              <br> <br>
+
+              <div id="TopImages"> <center>
+                <img src="Images//Industry Images//Consumer.jpg" hspace="50">
+                <img src="Images//Industry Images/Healthcare.jpg" hspace="50">
+                <img src="Images//Industry Images/Financial.jpg" hspace="50">
+              </center>
+            </div>
+            <br><br><br><br><br>
+            <div id="TopImages"> <center>
+              <img src="Images//Industry Images/Energy.jpg" hspace="50">
+              <img src="Images//Industry Images/Technology.jpg" hspace="50">
+              <img src="Images//Industry Images/Experimental.jpg" hspace="50">
+            </center>
+          </div>
+          <br><br><br><br><br>
+          <br><br><br>
+
+          <center> <h2> FEATURED INVESTMENTS </h2> </center>
+
+          <br><br><br><br>
+
+          <div id="Featured"> <center>
+            <img src="Images//Logos//Curiosity.jpg" hspace="94">
+            <img src="Images//Logos//Harambe.jpg" hspace="94">
+            <img src="Images//Logos//Spoopyland.jpg" hspace="94">
+          </center>
+        </div>
+
+        <div id="Curiosity">
+          <p> <h5> <center> By far the most promising company </center><center> we have worked with, CEO Ishan Ahuja</center>
+            <center> says TaskMaster has helped him get to all </center><center> of his meetings on time and he never
+            </center><center>forgets when his Yoga Classes are thanks to us </center><center> Well, Cheers to that
+              Ishan ! </center> </h5> </p>
+              <p> <h5> <center> All of us at TaskMaster strongly </br> believe Harambe lives on, in our hearts.</br>
+                Keeping this in mind, Harambe Equity Holdings</br> was the first company to get our functioning </br> Beta
+                before it hit markets
+              </center> </h5> </p>
+
+              <p> <h5> <center> Spoopyland Founder Waham Jonoob claims </br> his companies revenue has nearly tripled </br> thanks
+                to TaskMasters efficient prompts. He says </br> "my employees were blissfully unaware of their </br> assigned tasks" -
+                He also makes it a point to deliver </br> cookies to our office every Sunday  as a sign of</br> utmost
+              appreciation and gratitude
+            </center> </h5> </p>
+          </div>
+
+          <br><br><br><br><br><br><br><br>
+
+
+
+          <!-- ALL LOGO PICTURES FAM!-->
+          <div id="UpTop"> <center>
+            <img src="Images//Logos//Enterhubb.jpg">
+            <img src="Images//Logos//ICANTFEELMYMOUTH.jpg"> <br><br><br><br><br><br>
+            <img src="Images//Logos//woodapple.jpg">
+            <img src="Images//Logos//aftercare.jpg"> <br><br><br><br><br><br>
+            <img src="Images//Logos//Savage.jpg">
+            <img src="Images//Logos//Holiday.jpg"> <br><br><br><br><br><br>
+            <img src="Images//Logos//Matchmeup.jpg">
+            <img src="Images//Logos//Racoon.jpg"> <br><br><br><br><br><br>
+            <img src="Images//Logos//Goolybib.jpg">
+            <img src="Images//Logos//Greenizon.jpg"> <br><br><br><br><br><br>
+            <img src="Images//Logos//Girlush.jpg">
+            <img src="Images//Logos//Buginthehair.jpg"> <br><br><br><br><br><br>
+            <img src="Images//Logos//yeehaa.jpg">
+            <img src="Images//Logos//graspberry.jpg"> <br><br><br><br><br><br>
+            <img src="Images//Logos//turducken.jpg">
+            <img src="Images//Logos//brewdoggy.jpg"> <br><br><br><br><br><br>
+            <img src="Images//Logos//Gladious.jpg">
+            <img src="Images//Logos//greenfarm.jpg"> <br><br><br><br><br><br>
+            <img src="Images//Logos//pizzeria.jpg">
+            <img src="Images//Logos//mysticweed.jpg"> <br><br><br><br><br><br>
+          </center>
+        </div>
+
+
+
+        <!--TEAM SECTION-->
+        <div id="Team">
+          <h1> <center> TEAM <center> </h1>
+          </div>
+
+        <div id="Founder">
+          <center> <h1> A&nbspA&nbspR&nbspY&nbspA&nbspM&nbspA&nbspN &nbsp&nbsp&nbsp B&nbspA&nbspS&nbspU, &nbsp
+            F&nbspO&nbspU&nbspN&nbspD&nbspE&nbspR </h1></center>
+        <br><br><br>
+          <center> <img src="Images//Founder Picture//me.jpg"> </center>  <!-- THIS IS YOUR PICTURE -->
+          <br>
+          <p> <center> <strong> Innovator. Entertainer. Wine Taster. Cheese Burger Lover.  </strong> </br> <br><br>
+            I put the "security" in network security. Who watches the watchmen? &nbsp That would be me.</br><br>
+            In 2015 Aaryaman replaced the homepage of the RBI with the cover of Mumford & Sons <i> Little
+              Lion Man </i> . It took them a week to get it down. You're welcome. He has played drums in various
+              Calcutta-area bands under the name Reaper McBoss. In fact, he has been asked to leave some of the most
+              influential bands in Calcutta scene, including Gojira, the City of the Sun and Rolling Drumsticks.
+            </center></p>
+        </div>
+
+
+         <br><br><br><br><br><br>
+
+
+
+         <!--Company Legacy Section-->
+         <div id="Legacy">
+           <h1> <center> LEGACY </center> </h1>
+         </div>
+         <h4><center> TaskMasters legacy is inextricably tied up with that of our founder: Aaryaman Basu. </center> </br>
+           <center>Aaryaman is a creative Pioneer, admired by most, and
+           a friend to several.</center> </br>
+             <center>The lasting impact he has on both the technology industry and the world will never be forgotten.</center> </h4>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+body{
+  background-image: url("Images//Original Images//113.jpg") ;
+  background-repeat: no-repeat;
+}
+
+#topper{
+  font-style: normal;
+  font-family:fantasy;
+  color: rgb(176, 5, 41) ;
+}
+
+ul {
+  list-style-type: none;
+  margin: -8px;
+  padding: 0;
+  overflow: hidden;
+  background-color: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+li{
+  float:left;
+}
+
+li a {
+  display: block;
+  color: rgb(119, 105, 16);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color: rgb(168, 181, 178);
+}
+
+#tab1{
+  text-align: justify;
+  font-family: fantasy;
+}
+
+#About{
+  color:rgb(163, 126, 54)
+}
+
+#Portfolio{
+  color:rgb(145, 110, 42)
+}
+
+#tab3{
+  text-align: justify;
+  font-family:monospace;
+}
+
+.box {
+  background: rgb(240, 226, 177);
+  width: 300px;
+  padding: 75px;
+  margin: 25px;
+}
+.box:hover {
+  transform: rotate(360deg);
+  background: rgb(108, 110, 113);
+  border-radius: 50%;
+}
+.rotate {
+  transition: all 0.5s ease-in-out;
+}
+.rotate:hover {
+  transition: all 1s ease-in-out;
+}
+
+#topbox{
+display:flex;
+justify-content: space-between;
+}
+
+#bottombox{
+  display: flex;
+  justify-content: space-between;
+}
+
+#box1{
+  background-color:rgb(242, 242, 242);
+    width: 300px;
+    padding: 75px;
+    margin: 25px;
+}
+
+#box1:hover{
+  background: rgb(245, 237, 218);
+}
+
+#box2{
+  background-color: rgb(242, 242, 242);
+    width: 300px;
+    padding: 75px;
+    margin: 25px;
+}
+
+#box2:hover{
+  background: rgb(245, 237, 218);
+}
+
+#box3{
+  background-color: rgb(242, 242, 242);
+    width: 300px;
+    padding: 75px;
+    margin: 25px;
+}
+
+#box3:hover{
+  background: rgb(245, 237, 218);
+}
+
+#box4{
+  background-color: rgb(242, 242, 242);
+    width: 300px;
+    padding: 75px;
+    margin: 25px;
+}
+
+#box4:hover{
+  background: rgb(245, 237, 218);
+}
+
+#TopImage{
+  display: flex;
+  justify-content: space-between;
+}
+
+#featured{
+  display: flex;
+  justify-content: space-between;
+}
+
+#Curiosity{
+  display: flex;
+  justify-content: space-between;
+}
+
+#uptop{
+  display:inline-flex;
+}
+
+#Team{
+  color: white;
+}
+
+#Founder{
+  width: 1000px;
+  border: 1px solid grey ;
+  padding: 30px ;
+  margin: auto;
+  align-content:center;
+}
+
+#Legacy{
+  color:rgb(145, 110, 42)
+}
+
+#Try{
+  color:rgb(145, 110, 42)
+}
+
+#hbox{
+  display: flex;
+  justify-content: center;
+}
